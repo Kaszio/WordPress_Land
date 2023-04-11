@@ -5,12 +5,14 @@ body{
   background: linear-gradient(180deg, #305C8D 0%, #14263A 10.42%, #13202F 35.63%, #161A23 100%);
   background-size:100% 100%;
   position: absolute;
-
+  width:100%;
 }
 main{
   padding:0px;
   margin:0px;
+  width:100%;
 }
+
 
 #nav {
     min-height: 6em;
@@ -22,12 +24,10 @@ main{
   visibility:hidden;
 }
 
-/* Reserve the same height at the top of the page as the header min-height */
 html:not([data-scroll='0']) body {
     padding-top:3%;
 }
 
-/* Switch to fixed positioning, and stick the header to the top of the page */
 html:not([data-scroll='0']) #nav {
     position: fixed;
     top: 0;
@@ -1016,8 +1016,18 @@ border-radius: 100px;
 }
 
 
-
-
+@media only screen and (max-width: 1000px) {
+    .bigText {
+      font-size: 50px!important;
+    }
+    
+    .mediumText{
+      font-size: 37px!important;
+      /*width:100%;*/
+      padding-right:10%;
+      text-align:center;
+    }
+}
 
 
 
